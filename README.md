@@ -55,7 +55,7 @@ If not provided, then `ALIEN_BUILD_HOST_BLOCK` will be used (see below).
 - [Alien::Build::Plugin::Fetch::HostBlockList](https://metacpan.org/pod/Alien::Build::Plugin::Fetch::HostBlockList)
 - [Alien::Build](https://metacpan.org/pod/Alien::Build)
 - [alienfile](https://metacpan.org/pod/alienfile)
-- LAlien::Build::rc>
+- [Alien::Build::rc](https://metacpan.org/pod/Alien::Build::rc)
 
 # AUTHOR
 
