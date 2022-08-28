@@ -100,7 +100,7 @@ plugin is applied then this list will be used.
 
 =item L<alienfile>
 
-=item LAlien::Build::rc>
+=item L<Alien::Build::rc>
 
 =back
 
