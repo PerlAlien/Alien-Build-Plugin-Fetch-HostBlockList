@@ -3,7 +3,7 @@ package Alien::Build::Plugin::Fetch::HostBlockList;
 use strict;
 use warnings;
 use 5.008004;
-use Alien::Build::Plugin;
+use Alien::Build::Plugin 2.64;
 use URI;
 
 # ABSTRACT: Reject any Alien::Build fetch requests going to hosts in the block list
@@ -18,10 +18,7 @@ Using with environment variables only:
 
 Using from C<~/.alienbuild/rc.pl>:
 
- preload sub {
-   my($meta) = @_;
-   $meta->apply_plugin('Fetch::HostBlockList', block_hosts => [qw( badsite1.com badsite2.org )])
- };
+ preload_preload 'Fetch::HostBlockList', block_hosts => [qw( badsite1.com badsite2.org )];
 
 =head1 DESCRIPTION
 
