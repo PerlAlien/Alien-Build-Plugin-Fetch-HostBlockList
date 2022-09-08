@@ -14,10 +14,7 @@ export ALIEN_BUILD_HOST_BLOCK=badsite1.com,badsite2.org
 Using from `~/.alienbuild/rc.pl`:
 
 ```perl
-preload sub {
-  my($meta) = @_;
-  $meta->apply_plugin('Fetch::HostBlockList', block_hosts => [qw( badsite1.com badsite2.org )])
-};
+preload_preload 'Fetch::HostBlockList', block_hosts => [qw( badsite1.com badsite2.org )];
 ```
 
 # DESCRIPTION
